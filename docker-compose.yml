@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  ansible:
+    build: .
+    container_name: centos7_ansible26
+    volumes:
+      - ./dot_ansible:/root/.ansible
+    restart:  always
+    tty:      true
